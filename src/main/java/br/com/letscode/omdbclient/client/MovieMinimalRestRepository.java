@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value = "movieMinimalRest", url = "${omdbapi.url}")
 public interface MovieMinimalRestRepository {
     @GetMapping
-    br.com.letscode.java.omdbclient.client.ResultSearch search(@RequestParam("s") String movieTitle);
+    br.com.letscode.omdbclient.client.ResultSearch search(@RequestParam("s") String movieTitle);
 }
